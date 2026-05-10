@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lazaro's Landscaping</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+     <!-- NAVBAR -->
+  <header>
+    <div class="logo">Lazaro's Landscaping Services LLC</div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+                <!-- LEFT CONTENT -->
+        <div class="hero-content">
+
+            <h1>
+            Leaving Your <span>Lawn</span><br>
+            Lovely
+            </h1>
+
+            <p class="hero-text">
+            We help homeowners create clean, beautiful outdoor spaces
+            through professional lawn care, landscaping, and hardscaping services.
+            </p>
+
+            <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Contact Us</a>
+            <a href="#services" class="btn-secondary">Learn More</a>
+            </div>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-image">
+
+            <div class="image-shape">
+            <img src="images/hero-image.jpg" alt="Landscaping Project">
+            </div>
+
+        </div>
+        </div>
+    
+
+    </section>
+<!-- SERVICES -->
+  <section id="services">
+
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Quality outdoor solutions for residential and commercial properties.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>Lawn Maintenance</h3>
+        <p>
+          Weekly mowing, edging, trimming, and seasonal cleanup
+          to keep your property looking clean year-round.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Landscape Design</h3>
+        <p>
+          Custom landscape layouts designed to improve curb appeal
+          and maximize outdoor beauty.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Hardscaping</h3>
+        <p>
+          Patios, walkways, retaining walls, and stone installations
+          built to last.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+
+    <div class="section-title">
+      <h2>Recent Projects</h2>
+      <p>See some of our latest landscaping transformations.</p>
+    </div>
+
+    <div class="gallery">
+
+      <img src="images/Portfolio/IMG_0307.HEIC" class="active">
+
+      <img src="images/Portfolio/IMG_0317.HEIC">
+
+      <img src="images/Portfolio/IMG_0294.HEIC">
+
+      <img src="images/Portfolio/IMG_0303.HEIC">
+
+      <img src="images/Portfolio/IMG_0320.HEIC">
+
+      <img src="images/Portfolio/IMG_0633.HEIC">
+
+      <img src="images/Portfolio/IMG_0691.HEIC">
+
+      <img src="images/Portfolio/IMG_1717.HEIC">
+
+      <img src="images/Portfolio/IMG_1862.HEIC">
+
+      <img src="images/Portfolio/IMG_2339.HEIC">
+
+      <img src="images/Portfolio/IMG_3012.HEIC">
+
+      <button class="gallery-btn prev">❮</button>
+      <button class="gallery-btn next">❯</button>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="about">
+
+      <div>
+        <h2>Why Homeowners Choose Us</h2>
+
+        <p style="margin-top:20px;">
+          GreenScape Landscaping focuses on quality craftsmanship,
+          reliable service, and outdoor spaces that increase property value.
+        </p>
+
+        <p style="margin-top:20px;">
+          From lawn maintenance to complete outdoor renovations,
+          we help homeowners create landscapes they’re proud of.
+        </p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="section-title">
+      <h2>Request A Free Estimate</h2>
+      <p>Tell us about your project and we’ll get back to you.</p>
+    </div>
+
+    <div class="contact-box">
+
+      <form>
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="5" placeholder="Tell us about your project"></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 GreenScape Landscaping. All rights reserved.</p>
+  </footer>
+
+  <script>
+
+    const slides = document.querySelectorAll(".gallery img");
+
+    let current = 0;
+
+    function showSlide(index){
+
+      slides.forEach(slide => {
+        slide.classList.remove("active");
+      });
+
+      slides[index].classList.add("active");
+    }
+
+    document.querySelector(".next").addEventListener("click", () => {
+
+      current = (current + 1) % slides.length;
+
+      showSlide(current);
+
+    });
+
+    document.querySelector(".prev").addEventListener("click", () => {
+
+      current = (current - 1 + slides.length) % slides.length;
+
+      showSlide(current);
+
+    });
+
+  </script>
+
+</body>
+</html>
