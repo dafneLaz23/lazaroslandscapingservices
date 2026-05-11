@@ -4,6 +4,13 @@
   padding: 80px 20px; /* less left/right outside space */
   overflow: hidden;
 }
+.logo {
+  height: 100px;       /* Controls logo size */
+  width: auto;        /* Keeps proportions */
+  object-fit: contain;
+  margin: 0px;
+  padding: 0px;
+}
 
 .hero-container {
   max-width: 1500px;
@@ -13,7 +20,7 @@
   justify-content: space-between;
   gap: 140px; /* more whitespace between text and image */
   background:
-        url("images/hero-background.png")
+        url("images/leaf-background.png")
         center/cover no-repeat;
 }
 
