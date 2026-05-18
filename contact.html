@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lazaro's Landscaping</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+     <!-- NAVBAR -->
+  <header>
+    <style>
+        .service-area{
+        padding:80px 8%;
+        text-align:center;
+        background:#f7f7f5;
+        }
+
+        .service-area h2{
+        font-size:36px;
+        color:#1e293b;
+        margin-bottom:30px;
+        }
+
+        .map-container{
+        max-width:1000px;
+        margin:auto;
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 10px 25px rgba(0,0,0,0.12);
+        }
+    </style>
+    <img src="images/logo-bigger.png" alt="Lazaro's Landscaping Logo" class="logo">
+    <nav>
+      <a href="tel:+12035559876" class="btn-primary">
+            <i class="fa-solid fa-phone"></i> Call Us
+      </a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="contact">
+
+    <div class="section-title">
+      <h2>Request A Free Estimate</h2>
+      <p>Tell us about your project and we’ll get back to you.</p>
+    </div>
+
+    <div class="contact-box">
+
+      <form action="https://formspree.io/f/xrejdeey" method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+    </div>
+
+  </section>
+  <section class="service-area">
+        <h2>Serving Fairfield County, CT</h2>
+
+        <div class="map-container">
+            <iframe
+            src="https://www.google.com/maps?q=Fairfield%20County,%20CT&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+  <footer>
+    <p>© 2026 Lazaro's Landscaping Services LLC. Website built by DafneWebDesign.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61589770746721&sk=about" target="_blank">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="https://instagram.com" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="mailto:lazaroslandscapingservices@gmail.com">
+      <i class="fa-brands fa-google"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
